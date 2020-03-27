@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 80%;
+    margin: 5vh auto 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.game {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.game div {
+    height: 30vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid black;
+    /* background-color: #ddd; */
+}
+
+.play {
+    text-align: center;
+}
+
+.play input {
+    height: 90px;
+    font-size: 40px;
+    padding: 30px;
+    width: 400px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: #eee;
+}
+
+.play button {
+    width: 35%;
+    height: 90px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 20px 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    letter-spacing: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play button:hover {
+    background-color: #fff;
+    color: black;
+    border: 3px solid black;
+}
+
+.panel {
+    margin: 80px 0 40px;
+    font-size: 26px;
+}
+
+.panel,
+.score {
+    font-size: 26px;
+}
+
+.panel span,
+.score span {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .play input {
+        height: 70px;
+        font-size: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .play button {
+        height: 74px;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
